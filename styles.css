@@ -1,0 +1,237 @@
+/*Global*/
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+}
+html {
+ font-family: 'Open Sans', sans-serif;
+}
+body {
+ width: 100%;
+}
+h1 {
+ font-size: 36px;
+ font-weight: 300;
+ color: #0D70F4;
+}
+h3 {
+ font-size: 24px;
+}
+p {
+ font-size: 16px;
+ color: black;
+}
+.btnOutline {
+ display: block;
+ text-decoration: none;
+ color: #0D70F4;
+ border: 2px solid #0D70F4;
+ border-radius: 5px;
+ width: 200px;
+ height: 50px;
+ line-height: 50px;
+ text-align: center;
+ margin-top: 30px;
+ -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+.btnOutline:hover {
+ background-color: #0D70F4;
+ color: white;
+}
+.btnFilled {
+ display: block;
+ text-decoration: none;
+ background-color: #0D70F4;
+ color: white;
+ border: 2px solid white;
+ border-radius: 5px;
+ width: 200px;
+ height: 50px;
+ line-height: 50px;
+ text-align: center;
+ margin-top: 30px;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+.btnFilled:hover {
+ background-color: white;
+ color: #0D70F4;
+ border: 2px solid #0D70F4;
+}
+/*Nav*/
+nav {
+ line-height: 150px;
+ text-align: right;
+}
+nav a {
+ text-decoration: none;
+ color: #0D70F4;
+ font-size: 24px;
+ font-weight: bold;
+}
+nav a:first-child {
+ float: left;
+}
+nav a img {
+ vertical-align: middle;
+ width: 50px;
+}
+
+/*Header*/
+header { 
+ height: 1000px;
+ min-height: 1000px;
+ padding: 0 5%;
+ background-image: url(images/hero_bg.svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: top right;
+}
+header h1 {
+ width: 40%;
+ margin: 2em 0 0 0;
+}
+
+/*Chemistry*/
+.chem {
+ text-align: center;
+ margin: 5em 0 8em 0;
+ padding: 0 5%;
+}
+.chem h1 {
+ width: 50%;
+ margin: 0 auto 1.5em auto;
+}
+.potions {
+ display: flex;
+ justify-content: center;
+}
+.potion {
+ margin: 0 30px;
+}
+.potion img {
+ height: 100px;
+}
+.potion h3 {
+ margin-bottom: 5px;
+}
+
+/*About*/
+.about { 
+ padding: 0 5%;
+ background-image: url(images/hero2_bg.svg);
+ background-repeat: no-repeat;
+ background-size: 65%;
+ height: 900px;
+ min-height: 900px;
+}
+.about h1 {
+ margin-bottom: 30px;
+ padding-top: 300px;
+ margin-left: 50%;
+}
+
+/*Call to action*/
+.callToAction {
+ text-align: center;
+ padding: 8em 5%;
+ margin-bottom: 150px;
+ background-image: url(images/hero3_bg.svg);
+ background-repeat: no-repeat;
+ background-size: 70%;
+ background-position: center;
+}
+.callToAction h1, .callToAction a {
+ display: inline-block;
+ margin: 0 60px;
+ vertical-align: middle;
+}
+
+/*footer*/
+footer {
+ padding: 0 5%;
+ margin-bottom: 30px;
+}
+footer p {
+ color: #0D70F4;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+ nav a img {
+  filter: invert(.55) sepia(1) saturate(3) hue-rotate(175deg);
+ }
+ header {
+  height: 1000px;
+  min-height: 1000px;
+  background-image: url(images/mobile_hero_bg.svg);
+  background-position: bottom right;
+  background-size: 85%;
+ }
+ header h1 {
+  width: 100%;
+ }
+ .chem {
+  margin: 2em 0 3em 0;
+ }
+ .chem h1 {
+  width: 100%;
+ }
+ .about {
+  background-image: url(images/mobile_hero2_bg.svg);
+  background-size: 75%;
+ }
+ .about h1 {
+  padding-top: 750px;
+  margin-left: 0;
+ }
+ .callToAction {
+  margin-top: 5em;
+  padding: 10em 5%;
+  background-size: 90%;
+ }
+ .callToAction h1, .callToAction a {
+  margin-bottom: 30px;
+ }
+ footer p {
+  text-align: center;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+ header {
+  height: 820px;
+  min-height: 820px;
+ }
+ header h1 {
+  margin: 1em 0 0 0;
+ }
+ .potions {
+  flex-direction: column;
+ }
+ .potion {
+  margin-top: 30px;
+ }
+ .potion img {
+  height: 100px;
+ }
+ .about h1 {
+  padding-top: 500px;
+ }
+ .callToAction {
+  margin-top: 1em;
+  padding: 5em 5%;
+  background-size: 90%;
+ }
+}
