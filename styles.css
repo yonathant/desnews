@@ -14,7 +14,7 @@ body {
  width: 100%;
 }
 h1 {
- font-size: 36px;
+ font-size: 34px;
  font-weight: 300;
  color: #0D70F4;
 }
@@ -214,8 +214,11 @@ footer p {
 
 @media only screen and (max-width: 600px) {
  header {
-  height: 820px;
-  min-height: 820px;
+  height: 880px;
+  min-height: 880px;
+ }
+ nav a:nth-child(2){
+  display: none;
  }
  header h1 {
   margin: 1em 0 0 0;
